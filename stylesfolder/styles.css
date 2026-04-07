@@ -1,3 +1,12 @@
+/* 
+10px = 62.5%
+8px = 50%
+7px = 43.75%
+6px = 37.5%
+5px = 31.25%
+ */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -23,24 +32,30 @@ body{
   width: 100%;
   border-radius: 40%;
 }
+
+.container-for-titles{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .actor-name{
   font-family: Mrs Saint Delafield, cursive;
-  font-size: 8rem;
+  font-size: 12rem;
   font-weight: 700;
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   padding: 0 0 0 20px;
 }
 .title{
   font-family: Roboto, Arial;
   font-size: 50px;
   font-weight: 600;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 .write-up{
   font-family: Roboto, Arial;
-  font-size: 19px;
+  font-size: 2.2rem;
   font-weight: 400;
   display: flex;
   justify-content: center;
@@ -49,12 +64,6 @@ body{
   padding: 0 10px;
 
 }
-
-/* .main-div-container{
-  background-color: rgb(223, 213, 223);
-  display: flex;
-  justify-content: center;
-} */
 
 .main-div{
   margin: 50px auto;
@@ -65,7 +74,7 @@ body{
   width: 90%;
   max-width: 900px;
   padding: 2rem;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .headshot,
@@ -75,7 +84,7 @@ body{
 .booking-button{
   font-family: Roboto, Arial;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 2.2rem 0.2rem;
   color: white;
   background-color: black;
@@ -113,30 +122,26 @@ body{
   width: 100%;
 }
 
+@media (max-width: 750px) {
+  html {
+    font-size: 43.75%;
+  }
+}
+@media (max-width: 500px){
 
-/* @media(max-width: 200px){
-.headshot,
-.showreel,
-.speech,
-.upcoming,
-.booking-button {
-  font-family: Roboto, Arial;
-  font-weight: 500;
-  font-size: 15px;
-  padding: 16px 2px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  color: white;
-  background-color: black;
-  border-radius: 50px;
-  white-space: nowrap;
-  cursor: pointer;
+ html {
+  font-size: 40%;
+ }
 }
 
-
-.platforms{
-  width: 300px;
-  background-color: lightblue;
+@media (max-width: 400px) {
+  html {
+    font-size: 34%;
+  }
 }
 
-} */
+@media (max-width: 350px) {
+  html {
+    font-size: 31.25%;
+  }
+}
